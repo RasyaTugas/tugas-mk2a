@@ -19,6 +19,7 @@ namespace modul2a
             makananCb.DisplayMember = "Text";
             makananCb.ValueMember = "Value";
 
+            #anonymous type
             var items = new[]
             {
                 new { Text = "Ayam Goreng", Value = 25000},
@@ -199,6 +200,7 @@ namespace modul2a
                 int.TryParse(hargaMakananTb.Text, out hargaMakanan);
             }
 
+            #menconvert decimal menjadi int dari nilai numeric up and down
             satuan = (int)satuanMakanan.Value;
 
             int subTotal = hargaMakanan * satuan;
